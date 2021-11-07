@@ -12,12 +12,12 @@ sudo apt-get install -y curl wget net-tools nmap
 sudo apt-get install -y sshfs
 sudo apt-get install -y gparted gnome-disk-utility
 sudo apt-get install -y knot-dnsutils
-sudo apt-get install -y gcc make
-# sudo apt-get install -y g++ build-essential
+sudo apt-get install -y gcc make g++ build-essential
 sudo apt-get install -y git
 sudo apt-get install -y zip unzip rar unrar pigz
 sudo apt-get install -y ncat socat
 sudo apt-get install -y gnupg lsb-release
+sudo apt-get install -y aptitude
 # gnupg-agent
 
 # ssh (manually download)
