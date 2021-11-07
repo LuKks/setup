@@ -158,9 +158,6 @@ sudo fstrim -av
 # usb-creator-gtk
 # seahorse
 
-#
-# sudo apt-get remove kdeconnect
-
 # sudo apt-add-repository -y ppa:agornostal/ulauncher
 # sudo apt install ulauncher
 # git clone https://github.com/dracula/ulauncher.git ~/.config/ulauncher/user-themes/dracula-ulauncher

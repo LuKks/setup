@@ -243,3 +243,6 @@ sudo sh -c 'echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/de
 sudo apt-get update
 sudo apt-get install -y virtualbox-6.1
 # + download and install extension pack
+
+# remove kde connect
+sudo apt-get purge --remove kdeconnect
