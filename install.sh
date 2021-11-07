@@ -236,3 +236,10 @@ sudo apt-get install -y dconf-editor
 # go to: org -> gnome -> terminal -> legacy
 
 # https://extensions.gnome.org/extension/234/steal-my-focus/
+
+# virtualbox
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+sudo apt-get update
+sudo apt-get install -y virtualbox-6.1
+# + download and install extension pack

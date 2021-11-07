@@ -76,14 +76,6 @@ sh /opt/arduino-1.8.13/install.sh
 sudo ln -s /opt/arduino-1.8.13/arduino /usr/local/bin/arduino
 sudo usermod -a -G dialout $USER
 
-# virtualbox
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian focal contrib" >> /etc/apt/sources.list.d/virtualbox.list'
-sudo apt update
-sudo apt install -y virtualbox-6.1
-# extension pack:
-# https://download.virtualbox.org/virtualbox/6.1.14/Oracle_VM_VirtualBox_Extension_Pack-6.1.14.vbox-extpack
-
 # basic settings
 sudo sh -c 'echo "" >> /etc/sysctl.conf'
 sudo sh -c 'echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf'
