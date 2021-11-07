@@ -5,19 +5,6 @@
 # google-chrome-stable --ignore-gpu-blacklist --enable-gpu-rasterization --enable-native-gpu-memory-buffers --enable-accelerated-video-decode --enable-zero-copy --enable-features=VaapiVideoDecoder
 # https://www.linuxuprising.com/2021/01/how-to-enable-hardware-accelerated.html
 
-# settings
-#sudo apt install -y gnome-tweak-tool
-## sudo apt install -y chrome-gnome-shell
-## sudo apt install -y gnome-shell-extension-dash-to-panel
-## + https://extensions.gnome.org/extension/1160/dash-to-panel/
-#sudo wget -O /tmp/dash-to-panel.zip https://extensions.gnome.org/extension-data/dash-to-paneljderose9.github.com.v40.shell-extension.zip
-#GNOME_DASHTOPANEL_ID=`unzip -c /tmp/dash-to-panel.zip metadata.json | grep uuid | cut -d \" -f4`
-#mkdir -p ~/.local/share/gnome-shell/extensions/$GNOME_DASHTOPANEL_ID
-#unzip -q /tmp/dash-to-panel.zip -d ~/.local/share/gnome-shell/extensions/$GNOME_DASHTOPANEL_ID
-#gnome-extensions enable $GNOME_DASHTOPANEL_ID
-## + reload gnome shell
-## + import ubuntu-dash-to-panel-config file
-
 cp keyboard-scroll-lock $HOME
 cp keyboard-mute-audio $HOME
 cp keyboard-mute-mic $HOME

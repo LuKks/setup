@@ -216,3 +216,21 @@ sudo apt install github-desktop
 # firewall
 sudo apt-get install gufw
 # + enable status
+
+# settings
+#sudo apt install -y gnome-tweak-tool
+## sudo apt install -y chrome-gnome-shell
+## sudo apt install -y gnome-shell-extension-dash-to-panel
+## + https://extensions.gnome.org/extension/1160/dash-to-panel/
+#sudo wget -O /tmp/dash-to-panel.zip https://extensions.gnome.org/extension-data/dash-to-paneljderose9.github.com.v40.shell-extension.zip
+#GNOME_DASHTOPANEL_ID=`unzip -c /tmp/dash-to-panel.zip metadata.json | grep uuid | cut -d \" -f4`
+#mkdir -p ~/.local/share/gnome-shell/extensions/$GNOME_DASHTOPANEL_ID
+#unzip -q /tmp/dash-to-panel.zip -d ~/.local/share/gnome-shell/extensions/$GNOME_DASHTOPANEL_ID
+#gnome-extensions enable $GNOME_DASHTOPANEL_ID
+## + reload gnome shell
+## + import ./dash-to-panel/config file
+
+# disable terminal close confirmation
+sudo apt-get install -y dconf-editor
+# dconf-editor
+# go to: org -> gnome -> terminal -> legacy
