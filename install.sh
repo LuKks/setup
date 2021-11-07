@@ -246,3 +246,18 @@ sudo apt-get install -y virtualbox-6.1
 
 # remove kde connect
 sudo apt-get purge --remove kdeconnect
+
+# whois
+sudo apt-get install -y whois
+
+# open vs code
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list
+sudo apt-get update
+sudo apt-get install -y codium
+
+# basic settings
+sudo sh -c 'echo "" >> /etc/sysctl.conf'
+sudo sh -c 'echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf'
+sudo sh -c 'echo "vm.swappiness=0" >> /etc/sysctl.conf'
+sudo sysctl -p

@@ -148,7 +148,6 @@ sudo fstrim -av
 
 # virt-manager
 # protonvpn-cli
-# whois
 # proxychains
 # libreoffice
 # audacity
