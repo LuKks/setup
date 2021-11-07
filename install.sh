@@ -234,3 +234,5 @@ sudo apt-get install gufw
 sudo apt-get install -y dconf-editor
 # dconf-editor
 # go to: org -> gnome -> terminal -> legacy
+
+# https://extensions.gnome.org/extension/234/steal-my-focus/
