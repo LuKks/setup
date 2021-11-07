@@ -1,0 +1,21 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Lucas Barrena
+	email = lucasbarrena98@gmail.com
+	signingkey = B6171B3470A2936F
+[commit]
+	gpgsign = true
+[core]
+	autocrlf = input
+[gcrypt]
+	participants = B6171B3470A2936F
+
+#[includeIf "gitdir:/self/x/"]
+#  path = /self/x/.gitconfig
+[init]
+	defaultBranch = master
+

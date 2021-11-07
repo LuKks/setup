@@ -1,0 +1,13 @@
+Host *
+  ServerAliveInterval 120
+  User root
+  IdentitiesOnly yes
+  VerifyHostKeyDNS no
+  ForwardAgent no
+  ForwardX11 no
+  ControlMaster no
+  LocalCommand no
+
+# Host pub1
+#  HostName 1.2.3.4
+#  IdentityFile ~/.ssh/id_rsa
