@@ -60,6 +60,9 @@ sudo cp ./bluetooth/rtl8761b_config.bin /usr/lib/firmware/rtl_bt/
 sudo cp ./bluetooth/rtl8761b_fw.bin /usr/lib/firmware/rtl_bt/
 # re-insert usb (usbreset?)
 
+# fix bluetooth audio stuttering (disables BT-Wi-Fi coexistence algorithm, Intel related problem)
+sudo tee /etc/modprobe.d/iwlwifi-opt.conf <<< "options iwlwifi bt_coex_active=N"
+
 # disable swap
 sudo swapoff -a
 # sudo nano /etc/fstab
