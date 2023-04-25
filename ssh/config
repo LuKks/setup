@@ -1,5 +1,5 @@
 Host *
-  ServerAliveInterval 120
+  ServerAliveInterval 20
   User root
   IdentitiesOnly yes
   VerifyHostKeyDNS no
