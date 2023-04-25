@@ -76,6 +76,13 @@ sh /opt/arduino-1.8.13/install.sh
 sudo ln -s /opt/arduino-1.8.13/arduino /usr/local/bin/arduino
 sudo usermod -a -G dialout $USER
 
+sudo wget -P /tmp https://downloads.arduino.cc/arduino-ide/arduino-ide_2.0.4_Linux_64bit.zip
+unzip /tmp/arduino-ide_2.0.4_Linux_64bit.zip -d /tmp
+sudo mv /tmp/arduino-1.8.13 /opt/arduino-1.8.13
+sh /opt/arduino-1.8.13/install.sh
+sudo ln -s /opt/arduino-1.8.13/arduino /usr/local/bin/arduino
+sudo usermod -a -G dialout $USER
+
 # basic settings
 sudo sh -c 'echo "" >> /etc/sysctl.conf'
 sudo sh -c 'echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf'
