@@ -37,6 +37,10 @@ chsh -s $(which zsh)
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# zsh plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # change dns to cloudflare
 # use the gui
 # + there should be a command nm to change it
@@ -104,7 +108,7 @@ sudo apt-get install -y google-chrome-stable
 # telegram
 wget -O- https://telegram.org/dl/desktop/linux | sudo tar xJ -C /opt/
 sudo ln -s /opt/Telegram/Telegram /usr/local/bin/telegram-desktop
-sudo cp ./telegram/telegram.png ~/.local/share/icons/
+sudo cp ./telegram/telegram.png ~/.local/share/icons/ # /usr/share/icons
 sudo cp ./telegram/telegramdesktop.desktop ~/.local/share/applications/
 
 # install discord
@@ -186,6 +190,11 @@ sudo apt-add-repository -y ppa:maarten-fonville/android-studio
 sudo apt-get update
 sudo apt-get install -y android-studio
 
+# android (.profile)
+# export ANDROID_HOME=$HOME/Android/Sdk
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # adb
 sudo apt-get install -y android-tools-adb
 
@@ -240,6 +249,9 @@ sudo apt-get install gufw
 sudo apt-get install -y dconf-editor
 # dconf-editor
 # go to: org -> gnome -> terminal -> legacy
+
+# Minimize app on dash click
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
 # https://extensions.gnome.org/extension/234/steal-my-focus/
 

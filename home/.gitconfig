@@ -13,7 +13,6 @@
     autocrlf = input
 [push]
     followTags = true
-    autoSetupRemote = true
 [gcrypt]
     participants = B6171B3470A2936F
 
