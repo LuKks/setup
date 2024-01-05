@@ -175,6 +175,9 @@ sudo fstrim -av
 
 
 
+# file '/var/cache/apt/archives/partial/ couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+# /etc/apt/apt.conf.d/10sandbox
+# APT::Sandbox::User "root";
 
 
 
