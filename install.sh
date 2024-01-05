@@ -274,6 +274,9 @@ echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https:/
 sudo apt-get update
 sudo apt-get install -y codium
 
+# webcam
+sudo apt-get install guvcview
+
 # basic settings
 sudo sh -c 'echo "" >> /etc/sysctl.conf'
 sudo sh -c 'echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf'
