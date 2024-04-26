@@ -1,3 +1,9 @@
+# Host example
+#   User ubuntu
+#   HostName 1.2.3.4
+#   IdentityFile ~/.ssh/id_ed25519
+#   ForwardAgent yes
+
 Host *
   ServerAliveInterval 20
   User root
@@ -7,7 +13,3 @@ Host *
   ForwardX11 no
   ControlMaster no
   LocalCommand no
-
-# Host pub1
-#  HostName 1.2.3.4
-#  IdentityFile ~/.ssh/id_rsa
