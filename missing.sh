@@ -16,13 +16,11 @@ sudo mkdir -p /ram
 
 # virt-manager
 # protonvpn-cli
-# libreoffice
-# audacity
+
 # atomic wallet
 # ntp
 # usb-creator-gtk
 # seahorse
-# alsamixer
 # http toolkit
 
 # settings

@@ -5,11 +5,6 @@
 #   ForwardAgent yes
 
 Host *
-  ServerAliveInterval 20
   User root
   IdentitiesOnly yes
-  VerifyHostKeyDNS no
-  ForwardAgent no
-  ForwardX11 no
-  ControlMaster no
-  LocalCommand no
+  ServerAliveInterval 20

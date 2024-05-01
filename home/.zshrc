@@ -1,4 +1,4 @@
-export ZSH="/home/lucas/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
@@ -12,12 +12,10 @@ setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 
 export HISTSIZE=50000
-export HISTFILESIZE=10000000
+export HISTFILESIZE=1000000
 
 alias ll='ls -lh --group-directories-first'
 alias publish='git push --follow-tags && npm publish'
-alias xssh='ssh -F /self/x/.ssh/config'
-alias xscp='scp -F /self/x/.ssh/config'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

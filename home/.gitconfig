@@ -1,8 +1,9 @@
-[filter "lfs"]
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
-  required = true
-  clean = git-lfs clean -- %f
+[init]
+  defaultBranch = main
+
+[push]
+  followTags = true
+  autoSetupRemote = true
 
 [user]
   name = Lucas Barrena
@@ -12,18 +13,5 @@
 [commit]
   gpgsign = true
 
-[core]
-  autocrlf = input
-
-[push]
-  followTags = true
-  autoSetupRemote = true
-
 [gcrypt]
   participants = B6171B3470A2936F
-
-[init]
-  defaultBranch = main
-
-# [includeIf "gitdir:/self/x/"]
-#   path = /self/x/.gitconfig
