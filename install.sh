@@ -10,7 +10,7 @@ fi
 sudo apt-get update
 sudo apt-get upgrade -y
 
-sudo apt-get install -y git curl wget htop build-essential make cmake
+sudo apt-get install -y git curl wget htop build-essential make cmake gcc-multilib
 
 # Config
 cp ./ssh/config ~/.ssh/config
@@ -54,7 +54,9 @@ npm config set ignore-scripts true
 npm i -g node-gyp
 npm i -g create-project
 npm i -g arduino-cli-runtime
-npm i -g esp-dev-container
+npm i -g clang-standard
+npm i -g esp-container
+npm i -g iot-dev
 
 # Programs (Snap)
 sudo snap install brave
@@ -65,9 +67,13 @@ sudo snap install lxd gnome-boxes
 # sudo snap install libreoffice audacity
 
 # Programs (APT)
-sudo apt-get install -y golang
+sudo apt-get install -y golang clang-format
 sudo apt-get install -y gufw flameshot guvcview
 sudo apt-get install -y whois android-tools-adb
+sudo apt-get install -y pipx
+
+# Programs (Python)
+python3 -m pipx install esptool
 
 # Docker rootless
 sudo curl -sS https://get.docker.com/ | sh

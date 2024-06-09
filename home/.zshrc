@@ -33,4 +33,4 @@ export NVM_DIR="$HOME/.nvm"
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 
 # Local bins
-# export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
