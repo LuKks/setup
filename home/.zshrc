@@ -21,14 +21,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# Android
-# export ANDROID_HOME=$HOME/Android/Sdk
-# export PATH=$PATH:$ANDROID_HOME/emulator
-# export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# Go
-# export PATH="$HOME/go/bin:$PATH"
-
 # Docker rootless
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 

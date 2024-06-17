@@ -1,10 +1,7 @@
 {
   "theme": "Adaptive.sublime-theme",
   "color_scheme": "Monokai.sublime-color-scheme",
-  "ignored_packages": ["Vintage"],
-  "file_exclude_patterns": ["*.pyc", "*.pyo", "*.dll", "*.obj","*.o", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", ".directory", "desktop.ini", "*.class", "*.psd", "*.sublime-workspace"],
-  "font_size": 10,
-  "index_files": true,
+  "font_size": 11,
   "drag_text": false,
   "margin": 2,
   "tab_size": 2,
