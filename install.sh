@@ -56,7 +56,6 @@ npm i -g iot-dev iot-container
 # Programs (Snap)
 sudo snap install brave
 sudo snap install sublime-text beekeeper-studio
-sudo snap install telegram-desktop discord
 sudo snap install obs-studio kdenlive vlc ffmpeg
 sudo snap install lxd gnome-boxes
 
