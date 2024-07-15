@@ -38,11 +38,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # Node
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-nvm install --lts
-nvm use --lts
+sh -c "$(curl -fsSL https://raw.github.com/mafintosh/node-install/master/install)"
+sudo node-install 20
 
 # NPM
+npm config set prefix "$HOME/.local"
 npm config set loglevel http
 npm config set progress false
 

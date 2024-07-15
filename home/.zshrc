@@ -17,10 +17,6 @@ export HISTFILESIZE=1000000
 alias ll='ls -lh --group-directories-first'
 alias publish='git push --follow-tags && npm publish'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
 # Docker rootless
 export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 
