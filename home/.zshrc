@@ -17,8 +17,6 @@ export HISTFILESIZE=1000000
 alias ll='ls -lh --group-directories-first'
 alias publish='git push --follow-tags && npm publish'
 
-# Docker rootless
-export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/docker.sock"
 
-# Local bins
 export PATH="$HOME/.local/bin:$PATH"

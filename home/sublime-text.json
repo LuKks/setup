@@ -1,7 +1,7 @@
 {
   "theme": "Adaptive.sublime-theme",
   "color_scheme": "Monokai.sublime-color-scheme",
-  "font_size": 11,
+  "font_size": 12,
   "drag_text": false,
   "margin": 2,
   "tab_size": 2,
