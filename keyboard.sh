@@ -25,8 +25,8 @@ xkb_symbols "cms_modkeys" {
 };
 EOF
 
-sudo sed -i '/! option                        = symbols/a\  cmswin:cms_modkeys            = +cmswin(cms_modkeys)' /usr/share/X11/xkb/rules/evdev
-sudo sed -i '/! option/a\cmswin\ncmswin:cms_modkeys   Fix Apple keys' /usr/share/X11/xkb/rules/evdev.lst
+sudo sed -i '/! option\t\t\t= symbols/a\ \ cmswin:cms_modkeys\t\t= +cmswin(cms_modkeys)' /usr/share/X11/xkb/rules/evdev
+sudo sed -i '/! option/a\ \ cmswin\n\ \ cmswin:cms_modkeys' /usr/share/X11/xkb/rules/evdev.lst
 sudo dconf write /org/gnome/desktop/input-sources/xkb-options "['cmswin:cms_modkeys']"
 
 # 3
