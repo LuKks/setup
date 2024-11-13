@@ -63,6 +63,7 @@ sudo snap install lxd gnome-boxes
 sudo apt-get install -y golang clang-format
 sudo apt-get install -y gufw flameshot guvcview
 sudo apt-get install -y whois android-tools-adb
+sudo apt-get install -y python3-pip
 
 # Docker rootless
 sudo curl -sS https://get.docker.com/ | sh
