@@ -14,6 +14,12 @@ setopt HIST_FIND_NO_DUPS
 export HISTSIZE=50000
 export HISTFILESIZE=1000000
 
+if [[ "$OSTYPE" == darwin* ]]; then
+  alias ls='gls'
+
+  export GPG_TTY=$(tty)
+fi
+
 alias ll='ls -lh --group-directories-first'
 alias publish='git push --follow-tags && npm publish'
 

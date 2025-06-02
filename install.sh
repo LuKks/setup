@@ -39,7 +39,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Node
 sh -c "$(curl -fsSL https://raw.github.com/mafintosh/node-install/master/install)"
-sudo node-install 20
+sudo node-install 22
 
 # NPM
 npm config set prefix "$HOME/.local"
