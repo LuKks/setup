@@ -20,6 +20,8 @@ main () {
   cp ./home/.zshrc ~/.zshrc
   cp ./home/sublime-text.json ~/Library/Application\ Support/Sublime\ Text/Packages/User/Preferences.sublime-settings
 
+  git config --global core.excludesFile ~/.gitignore
+
   # SSH and GPG
   chmod 600 ~/.ssh/*
   chmod 644 ~/.ssh/*.pub

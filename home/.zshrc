@@ -6,6 +6,8 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 
+zstyle ':omz:update' mode disabled
+
 setopt HIST_IGNORE_SPACE
 setopt INC_APPEND_HISTORY
 setopt EXTENDED_HISTORY
